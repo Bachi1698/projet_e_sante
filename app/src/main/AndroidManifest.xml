@@ -9,11 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Esante">
-        <activity android:name=".listeParcours"></activity>
-        <activity
-            android:name=".EspacePatient"
-            android:label="@string/title_activity_espace_patient"
-            android:theme="@style/Theme.Esante.NoActionBar" />
+        <activity android:name=".ActivityMainListeMedecins"/>
+        <activity android:name=".ActivityMainListeSeances"/>
+        <activity android:name=".ActivityMainEspacePatient"/>
+        <activity android:name=".ActivityMainListeActiviteIntervenant"/>
+        <activity android:name=".ActivityMainEspaceIntervenant"/>
+        <activity android:name=".ActivityMainEspaceMedecin"/>
+        <activity android:name=".ActivityActivites"/>
+        <activity android:name=".ActivityParcours"/>
+        <activity android:name=".ActivityMainListePatient"/>
+        <activity android:name=".ActivityMainListeIntervenant"/>
+        <activity android:name=".ActivityMainListeStructure"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +27,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

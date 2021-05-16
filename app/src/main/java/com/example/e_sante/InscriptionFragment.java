@@ -65,7 +65,7 @@ public class InscriptionFragment extends DialogFragment {
         {
             statut.setText("PATIENT");
         }
-        btn_inscription.setOnClickListener(new View.OnClickListener() {
+        /*btn_inscription.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -74,7 +74,7 @@ public class InscriptionFragment extends DialogFragment {
                 InscriptionFragment.this.dismiss();
 
             }
-        });
+        });*/
 
     }
 
@@ -82,4 +82,3 @@ public class InscriptionFragment extends DialogFragment {
 
 
 }
-

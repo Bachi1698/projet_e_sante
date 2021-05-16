@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     public Button connexion_medecin;
-    public int verifRole;
+    public static int verifRole;
     Button inscription_medecin;
     Button connexion_intervenant;
     Button inscription_intervenant;

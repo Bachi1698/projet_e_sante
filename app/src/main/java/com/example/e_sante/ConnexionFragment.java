@@ -1,5 +1,6 @@
 package com.example.e_sante;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,9 +12,11 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class ConnexionFragment extends DialogFragment {
     private EditText email,password,statut;
-//    private PaiementCarteListener listener;
+    //    private PaiementCarteListener listener;
     private Button btn_login;
 
 
@@ -63,17 +66,44 @@ public class ConnexionFragment extends DialogFragment {
         {
             statut.setText("PATIENT");
         }
-        /*btn_login.setOnClickListener(new View.OnClickListener() {
+        btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                listener.onOkClickDialog(input_name.getText().toString());
-            }*//*
-        });*/
+                if(activity.verifRole==1){
 
+                Intent intent = new Intent(getContext(),ActivityMainEspaceMedecin.class);
+                startActivity(intent);
+                ConnexionFragment.this.dismiss();}
+                if(activity.verifRole==2){
+
+                    Intent intent = new Intent(getContext(),ActivityMainEspaceIntervenant.class);
+                    startActivity(intent);
+                    ConnexionFragment.this.dismiss();}
+                if(activity.verifRole==3){
+
+                    Intent intent = new Intent(getContext(),ActivityMainEspacePatient.class);
+                    startActivity(intent);
+                    ConnexionFragment.this.dismiss();}
+
+
+            }
+        });
+
+
+
+       /* btn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getContext(),ActivityMainEspaceMedecin.class);
+                startActivity(intent);
+                ConnexionFragment.this.dismiss();
+
+            }
+        });*/
     }
 
 
 
 
 }
-

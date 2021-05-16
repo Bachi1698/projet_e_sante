@@ -108,21 +108,21 @@
                     android:textSize="16dp"
                     android:textStyle="normal|bold|italic"
                     android:gravity="center"/>
-                    <LinearLayout
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="connexion"
-                            android:layout_marginRight="5dp"
-                            android:id="@+id/connexionIntervenant"/>
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="inscription"
-                            android:id="@+id/inscriptionIntervenant"/>                  </LinearLayout>
+                        android:text="connexion"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/connexionIntervenant"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="inscription"
+                        android:id="@+id/inscriptionIntervenant"/>                  </LinearLayout>
 
 
             </LinearLayout>

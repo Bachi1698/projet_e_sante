@@ -11,4 +11,6 @@
     <color name="colorPrimaryDark">#0099ff</color>
     <color name="colorAccent">#D81B60</color>
     <color name="color">#C7E3F6</color>
+    <color name="semiTransparentColor">#330263E8</color>
+
 </resources>
